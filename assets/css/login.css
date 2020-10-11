@@ -26,14 +26,25 @@ body{
 .layui-form{
     padding: 0 30px;
 }
+.layui-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.layui-input{
+    padding-left: 32px;
+}
 /* 登录按钮 */
+.layui-form-item{
+    position: relative;
+}
 .links {
     display: flex;
     justify-content: flex-end;
     padding-top: 5px;
 }
 .links a{
-    font-size: 16px;
+    font-size: 13px;
     color:rgb(30, 159, 255);
 }
 .reg_box{
