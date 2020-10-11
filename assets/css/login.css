@@ -1,0 +1,41 @@
+html,
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../images/login_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.login{
+    position: absolute;
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.title-box {
+    height: 60px;
+    background: url(../images/login_title.png) no-repeat center;
+} 
+.layui-form{
+    padding: 0 30px;
+}
+/* 登录按钮 */
+.links {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+}
+.links a{
+    font-size: 16px;
+    color:rgb(30, 159, 255);
+}
+.reg_box{
+    display: none;
+}
