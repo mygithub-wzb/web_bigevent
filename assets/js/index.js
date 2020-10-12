@@ -1,11 +1,10 @@
-$(function () {
++$(function () {
     // 获取用户登录信息
-    // var url = 'http://ajax.frontend.itheima.net'
     getUserInfo();
     function getUserInfo() {
         $.ajax({
             method: 'GET',
-            url:'/my/userinfo',
+            url: '/my/userinfo',
             // headers: {
             //     Authorization: localStorage.getItem('token') || ''
             // },
@@ -22,11 +21,20 @@ $(function () {
         var name = user.nickname || user.username;
         $('#welcome').html("欢迎     " + name)
         if (user.user_pic !== null) {
-            $('.layui-nav-img').attr('src',user.user_pic).show()
+            $('.layui-nav-img').attr('src', user.user_pic).show()
             $('.user-active').hide()
         } else {
             $('.layui-nav-img').hide()
             $('.user-active').html(name[0].toUpperCase()).show()
         }
     }
+    $('#btnlogoout').on('click', function () {
+        layer.confirm('确认退出?', { icon: 3, title: '提示' },
+            function (index) {
+                localStorage.removeItem('token')
+                location.href = '/login.html'
+                layer.close(index);
+            });
+    })
+
 })
