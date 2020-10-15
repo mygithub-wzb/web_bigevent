@@ -40,10 +40,4 @@ function getUserActive(user) {
         $('.layui-nav-img').hide()
         $('.user-active').html(name[0].toUpperCase()).show()
     }
-<<<<<<< HEAD
 }
-=======
-}
-
-})
->>>>>>> b6337b1090771505e76d4337afa415889ff4eac2
